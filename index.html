@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Talles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Talles</h1>
+    <p>Selecciona la medida de tu pie, el modelito que más te gusta y nuestra calculadora lo realiza por vos.</p>
+    <div class="form-container">
+        <h3>Registrar Talle</h3>
+        <label for="medida">Seleccione la medida de su pie:</label>
+        <select id="medida" name="medida">
+            <option value="29">29 cm</option>
+            <option value="30">30 cm</option>
+            <option value="31">31 cm</option>
+            <option value="32">32 cm</option>
+        </select>
+
+        <label for="modelo">Seleccione el modelo de zapatilla:</label>
+        <div id="modelos" class="modelos-container">
+        </div>
+
+        <button onclick="registrarTalle()">Calcular y Guardar</button>
+    </div>
+
+    <h3>Talles Guardados (<span id="contadorTalles">0</span>)</h3>
+    <div id="tallesGuardados"></div>
+
+    <button onclick="eliminarTodosTalles()">Eliminar todos los talles guardados</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
